@@ -27,7 +27,7 @@ const server = http.createServer(app);
  * Listen on provided port, on all network interfaces.
  */
 
-mongoose.connect('mongodb://localhost:27017/MyTrees').then(() => {
+mongoose.connect(DB).then(() => {
   console.log('Connected to MongoDB database.');
 }).catch((error) => {
   console.error('Error connecting to MongoDB database:', error);
